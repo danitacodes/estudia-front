@@ -37,7 +37,7 @@ function EditStudy() {
 
   useEffect(() => {
     const fetching = async () => {
-      const { data } = await axios.get(`http://localhost:5000/api/v1/study/${id}`);
+      const { data } = await axios.get(`https://estudia-back.onrender.com/api/v1/study/${id}`);
 
       setAssignment(data.assignment);
       setMinutes(data.minutes);

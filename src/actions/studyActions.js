@@ -31,7 +31,7 @@ import {
       };
   
       const { data } = await axios.get(
-        `/api/v1/study`,
+        `https://estudia-back.onrender.com/api/v1/study`,
         config
       );
   
@@ -70,7 +70,7 @@ import {
         };
   
         const { data } = await axios.post(
-          `/api/v1/study/create`,
+          `https://estudia-back.onrender.com/api/v1/study/create`,
           { assignment, minutes, subject, notes },
           config
         );
@@ -110,7 +110,7 @@ import {
         };
   
         const { data } = await axios.put(
-          `/api/v1/study/${id}`,
+          `https://estudia-back.onrender.com/api/v1/study/${id}`,
           { assignment, minutes, subject, notes },
           config
         );
@@ -148,7 +148,7 @@ import {
       };
   
       const { data } = await axios.delete(
-        `/api/v1/study/${id}`,
+        `https://estudia-back.onrender.com/api/v1/study/${id}`,
         config
       );
   
