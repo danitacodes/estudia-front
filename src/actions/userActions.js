@@ -24,7 +24,7 @@ import {
       };
   
       const { data } = await axios.post(
-        "https://estudia-back.onrender.com/api/v1/users/signin",
+        "/api/v1/users/signin",
         { username, email, password },
         config
       );
@@ -59,7 +59,7 @@ import {
       };
   
       const { data } = await axios.post(
-        "https://estudia-back.onrender.com/api/v1/users/signup",
+        "/api/v1/users/signup",
         { username, email, password },
         config
       );
@@ -96,7 +96,7 @@ import {
       };
   
       const { data } = await axios.post(
-        "https://estudia-back.onrender.com/api/v1/users/profile",
+        "/api/v1/users/profile",
         user,
         config
       );
